@@ -1,0 +1,73 @@
+<div class="col d-flex justify-content-center align-items-center h-10">
+  <div class="col">
+    <div class="card card-registration my-4" style="background-color:darkseagreen">
+      <div class="row g-0">
+        <div class="col-xl-8">
+          <div class="card-body p-md-6 text-black">
+            <h3 class="mb-2 text-uppercase">Search Flights</h3>
+            <div class="row g-0">
+              <div class="col-md-8 mb-6">
+                <div class="form-outline">
+                  <input type="radio" aria-selected="true" id="roundTrip" style="margin-right:5px;" name="travelType" value="roundTrip">
+                  <label for="roundTrip" style="margin-right:20px;">Round Trip</label>
+                  
+                  <input type="radio" style="margin-right:5px;" id="oneWay" name="travelType" value="oneWay" >
+                  <label for="oneWay">One Way</label>             
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-3 mb-4">
+                <div class="form-outline">
+                  <label class="form-label ">From?</label>
+                  <input type="text" id="fromLocation" class="form-control"/>                 
+                </div>
+              </div> 
+              <div class="col-md-1.5">
+                <br/>
+                <img src="/assets/ToFro-removebg-preview.png" alt="image">
+              </div>                            
+              <div class="col-md-3 mb-4">
+                <div class="form-outline">
+                  <label class="form-label">To?</label>
+                  <input type="text" id="ToLocation" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4 mb-4">
+                <div class="form-outline">
+                  <label class="form-label">Date Of Journey</label>
+              <input type="date" (change)="SendDataonChange($event)" (click)="onClick()" class="form-control"/>                    
+                </div>
+              </div>
+              <div class="col-md-5 mb-4">
+                  <label for="Gender">No Of Passengers</label>
+                  <select id="GenderValue" name="Gender" ngModel class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>                      
+                  </select>
+                </div>                               
+            </div>
+            <div class="row g-0">
+              <div class="d-flex justify-content-end pt-3">                
+                <button type="button" value="search" class="btn" style="background-color:darkcyan; ">Search Flights</button>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <br/>
+          <img src="/assets/FlightExplore.jfif" alt="image"
+            alt="Sample photo" class="img-fluid"
+            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            <br/>            
+            <div>
+              <p style="font-style: oblique;color:darkblue   ;font-size:x-large;">“Stop Dreaming, Start Exploring"</p>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

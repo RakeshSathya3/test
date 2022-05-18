@@ -1,0 +1,96 @@
+<div class="col d-flex justify-content-center align-items-center h-10" >  
+    <div class="col">
+      <div class="card card-registration my-4" style="background-color:burlywood">
+        <div class="row g-0">
+          <div class="col-xl-3">
+            <img src="/assets/FlightRegister1.png" alt="image"
+              alt="Sample photo" class="img-fluid"
+              style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              <br/>
+              <br/>
+              <div>
+                <p style="font-style: oblique;color:blue;font-size: larger;">“Once you have tasted flight, you will forever walk the earth with your eyes turned skywards.” – Leonardo Da Vinci</p>
+              </div>
+        </div>
+          <div class="col-xl-6">
+            <div class="card-body p-md-6 text-black">
+              <h3 class="mb-2 text-uppercase">User registration form</h3>
+
+              <div class="row g-0">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label">First name</label>
+                    <input type="text"  id="firstName" class="form-control" />
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label">Last name</label>
+                    <input type="text" id="lastName" class="form-control" />                    
+                  </div>
+                </div>
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" >EmailId</label>
+                <input type="text" id="emailId" class="form-control" />
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label">Address with pincode</label>
+                <input type="text" id="form3Example8" class="form-control" />               
+              </div>
+              <div class="row g-0">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label">Date Of Birth</label>
+                <input type="date" (change)="SendDataonChange($event)" (click)="onClick()" class="form-control"/>                    
+                  </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <label for="Gender">Gender</label>
+                    <select id="GenderValue" name="Gender" ngModel class="form-control">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>                      
+                    </select>
+                  </div>                  
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" >Contact Number</label>
+                <input type="text" id="contactNumber" formControlName="phone" class="form-control" />                
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label">Password</label>                
+                <input type="password" id="Password" class="form-control"/>                                              
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="form-control"/>
+              </div>
+              <div class="d-flex justify-content-center pt-3">                
+                <button type="button" class="btn ">Submit form</button>
+              </div>
+              <p class="text-center text-muted mt-5 mb-0">Already have an account? <a routerLink="/login">Login here</a></p>
+
+
+
+
+            </div>
+          </div>    
+          <div class="col-xl-3">
+            <img src="/assets/FlightRegister2.png" alt="image"
+              alt="Sample photo" class="img-fluid"
+              style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              <br/>
+              <br/>
+              <br/>
+              <div>
+                <p style="font-style: oblique;color:mediumvioletred;font-size: larger;">“Until you spread your wings, you have no idea how far you’ll fly."</p>
+              </div>
+          </div>       
+        </div> 
+               
+      </div>
+    </div>
+  </div>
+
